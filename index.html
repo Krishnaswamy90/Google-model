@@ -1,12 +1,66 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>ReCore AI</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <iframe src='https://decodernet.mywire.org/ReCore'></iframe>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+<style>
 
-        <script src="web.js"></script>
-    </body>
-</html> 
+  body{
+    font-family: Arial,sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    margin:0;
+  }
+
+.game-container{
+  background-color: white;
+  padding:20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align:center;
+  max-width: 400px;
+  width:100%;
+}
+
+h1{
+  color:#333;
+
+}
+
+p{
+  color:#666;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="game-container">
+  <h1>Number Guessing Game</h1>
+  <p>I'm thinking of a number between 1 and 100 can you guess it? you have 10 attempts!</p>
+  <div>Replace me with an input element</div>
+  <div>Replace me with an Button Element</div>
+  <div>Replace me wwith an Output Element</div>
+</div>
+
+<script>
+  let randomNumber=Math.floor(Math.random()*100)+1;
+  let attempts=0;
+  const maxAttempts=10;
+  let isCorrect=false;
+
+
+function checkGuess(){
+
+}
+
+document.getElementById('guessButton').addEventListener('click',checkGuess);
+</script>
+  
+</body>
+</html>
